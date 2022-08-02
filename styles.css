@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Primary */
+  --blue: hsl(246, 80%, 60%);
+  --orange: hsl(15, 100%, 70%);
+  --Soft-blue: hsl(195, 74%, 62%);
+  --Light-red: hsl(348, 100%, 68%);
+  --Lime-green: hsl(145, 58%, 55%);
+  --Violet: hsl(264, 64%, 52%);
+  --Soft-orange: hsl(43, 84%, 65%);
+
+  /* Neutral */
+  --Very-dark-blue: hsl(226, 43%, 10%);
+  --Dark-blue: hsl(235, 46%, 20%);
+  --Desaturated-blue: hsl(235, 45%, 61%);
+  --Pale-Blue: hsl(236, 100%, 87%);
+
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  font-family: "Rubik", Verdana, sans-serif;
+  background-color: var(--Very-dark-blue);
+  color: white;
+}
+
+.container {
+  max-width: 1000px;
+  height: 94vh;
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  align-items: center;
+  margin: auto;
+  gap: 18px;
+  padding: 0 30px;
+}
+
+/* main */
+
+.main-container {
+}
+.main__user {
+  background-color: var(--blue);
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.main__user img {
+  width: 80px;
+  border: 2px solid var(--Pale-Blue);
+  border-radius: 50%;
+}
+.main__user p {
+  margin-top: 28px;
+}
+.main__user h2 {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.main__time {
+  background-color: var(--Dark-blue);
+  padding: 15px 25px;
+  border-radius: 0 0 10px 10px;
+}
+.main__time p {
+  margin-top: 15px;
+  font-size: 1.4rem;
+}
+
+/* Cards */
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.card--work {
+  background: url("./images/icon-work.svg");
+  background-color: var(--orange);
+}
+.card--play {
+  background: url("./images/icon-play.svg");
+  background-color: var(--Soft-blue);
+}
+.card--study {
+  background: url("./images/icon-study.svg");
+  background-color: var(--Light-red);
+}
+.card--exercise {
+  background: url("./images/icon-exercise.svg");
+  background-color: var(--Lime-green);
+}
+.card--social {
+  background: url("./images/icon-social.svg");
+  background-color: var(--Violet);
+}
+.card--care {
+  background: url("./images/icon-self-care.svg");
+  background-color: var(--Soft-orange);
+}
+.card {
+  background-repeat: no-repeat;
+  background-position: top right;
+  border-radius: 11px;
+  background-size: 38px;
+}
+.card__info {
+  background-color: var(--Dark-blue);
+  margin-top: 30px;
+  border-radius: 10px;
+  padding: 20px;
+}
+.info--name {
+  font-size: 1.4rem;
+}
+.info--hours {
+  font-size: 4rem;
+  margin-top: 20px;
+}
+.info--last {
+  color: var(--Pale-Blue);
+  margin-top: 8px;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  background-color: var(--Dark-blue);
+  padding: 10px;
+}
+footer a {
+  color: var(--Pale-Blue);
+  text-decoration: none;
+}
