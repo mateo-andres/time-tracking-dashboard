@@ -16,7 +16,8 @@
   /* Neutral */
   --Very-dark-blue: hsl(226, 43%, 10%);
   --Dark-blue: hsl(235, 46%, 20%);
-  --Desaturated-blue: hsl(235, 45%, 61%);
+  /* --Desaturated-blue: hsl(235, 45%, 61%); */
+  --Desaturated-blue: hsl(236, 41%, 34%);
   --Pale-Blue: hsl(236, 100%, 87%);
 
   font-size: 62.5%;
@@ -44,11 +45,13 @@ body {
 /* main */
 
 .main-container {
+  border-radius: 10px;
+  background-color: var(--Dark-blue);
 }
 .main__user {
   background-color: var(--blue);
   padding: 20px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 10px;
 }
 .main__user img {
   width: 80px;
@@ -70,7 +73,15 @@ body {
 }
 .main__time p {
   margin-top: 15px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+  cursor: default;
+}
+.main__time p:hover {
+  font-weight: bold;
+}
+.main__time p.selected {
+  font-weight: bold;
+  color: var(--Pale-Blue);
 }
 
 /* Cards */
@@ -100,7 +111,7 @@ body {
   background: url("./images/icon-social.svg");
   background-color: var(--Violet);
 }
-.card--care {
+.card--selfcare {
   background: url("./images/icon-self-care.svg");
   background-color: var(--Soft-orange);
 }
@@ -109,6 +120,9 @@ body {
   background-position: top right;
   border-radius: 11px;
   background-size: 38px;
+}
+.card :hover {
+  background-color: var(--Desaturated-blue);
 }
 .card__info {
   background-color: var(--Dark-blue);
