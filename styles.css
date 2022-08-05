@@ -148,6 +148,9 @@ footer {
   text-align: center;
   background-color: var(--Dark-blue);
   padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 footer a {
   color: var(--Pale-Blue);
