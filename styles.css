@@ -156,3 +156,63 @@ footer a {
   color: var(--Pale-Blue);
   text-decoration: none;
 }
+
+@media (max-width: 600px) {
+  .container {
+    display: block;
+  }
+
+  .main__user {
+    display: grid;
+    grid-template-columns: 84px 1fr;
+    grid-template-rows: 30px 54px;
+    column-gap: 15px;
+    margin-top: 20px;
+  }
+  .main__user p {
+    grid-area: 1/2/2/3;
+    margin-top: 0;
+    align-self: flex-end;
+  }
+  .main__user h2 {
+    grid-area: 2/2/3/3;
+    font-size: 2rem;
+    align-self: flex-start;
+    margin-top: 0;
+  }
+
+  .main__time {
+    display: flex;
+    justify-content: space-between;
+  }
+  .main__time p {
+    margin-top: 0;
+  }
+
+  .cards-container {
+    display: block;
+  }
+  .card {
+    padding-top: 35px;
+    margin-top: 20px;
+  }
+  .card__info {
+    margin: 0;
+    padding-top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: flex-end;
+    row-gap: 5px;
+  }
+  .info--hours {
+    grid-area: 2/1/3/2;
+    align-self: flex-start;
+    margin-top: 0;
+  }
+  .info--last {
+    grid-area: 2/2/3/3;
+    align-self: center;
+    margin-top: 0;
+  }
+}
